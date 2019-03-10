@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libxwiimote
+Description: Library to control Nintendo Wii Remotes
+Requires: libudev
+Version: 2
+Libs: -L${libdir} -lxwiimote
+Cflags: -I${includedir}
